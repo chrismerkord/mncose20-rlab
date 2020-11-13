@@ -8,7 +8,9 @@ Suggests:
     bslib,
     downlit,
     jsonlite,
+    htmltools,
     xml2
 Remotes: 
     rstudio/bookdown,
-    rstudio/bslib
+    rstudio/bslib,
+    rstudio/htmltools
