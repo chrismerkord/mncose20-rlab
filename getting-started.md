@@ -1,0 +1,50 @@
+# (PART) Getting Started {-}
+
+# Pre-requisites
+
+In Part 1 of this lab, you will learn what R and RStudio are, how the RStudio environment is organized, and how RStudio organizes your work into Projects. To finish, you will create your first RStudio Project, which you will continue to work in for the rest of the lab.
+
+## About R
+
+**R** is a programming language and free software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing. Today, R is the most commonly used software for data analysis in the biological sciences.
+
+While it is possible to run R by itself, it is more common to run it as part of **RStudio**, a free and open-source integrated development environment (IDE) for R. For this lab, you will be using RStudio rather than R directly.
+
+There are versions of RStudio. We will use **[RStudio Cloud](https://rstudio.cloud/)**, an online version of RStudio that requires less initial setup and is good for learning in a classroom setting. 
+
+## Open RStudio Cloud
+
+First, make sure you have an RStudio Cloud account. Go to https://rstudio.cloud/ and click "Sign Up" or "Get Started for Free". Choose the "Cloud Free" plan and continue.
+
+Use an email address and password of your choice (they do not have to be your MSUM ones). You will have to confirm your email address after registering. To do so, go to your email account, find the message from RStudio Cloud, and click the link to confirm the email address is yours.
+
+Next, sign in to RStudio Cloud.
+
+Every RStudio Cloud user gets a personal workspace, named **Your Workspace**, in which to create projects. When you sign in, you will start out in Your Workspace.
+
+In the future, this is where you will see a list of your projects. For now, it will say "no project". Click the image below to see an example.
+
+<figure class="figure">
+  <a href="images/rstudio_cloud_your_workspace.png" data-lightbox="rstudio-start" data-title="Your Workspace in RStudio Cloud."><img src="images/rstudio_cloud_your_workspace.png" class="figure-img img-thumbnail"></a>
+  <figcaption class="figure-caption">Your Workspace in RStudio Cloud.</figcaption>
+</figure>
+
+
+## Create a Project
+
+RStudio projects make it straightforward to divide your work into multiple contexts, each with their own working directory, workspace, history, and source documents (scripts), and data files.
+
+To create a new project:
+
+1. Go to Your Workspace
+2. Go to the Projects area
+2. Click the button to start a New Project
+
+<figure class="figure">
+  <a href="images/rstudio_cloud_new_project.png" data-lightbox="rstudio-start" data-title="Create a new project."><img src="images/rstudio_cloud_new_project.png" class="figure-img img-thumbnail"></a>
+  <figcaption class="figure-caption">Create a new project.</figcaption>
+</figure>
+
+Wait a moment while your new project is deployed.
+
+When the screen refreshes you will have a new, empty project and you can move on to Part 2.
