@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>8 Bluestem Assignment | Comparing Populations: Introduction to Data Analysis in R</title>
+<meta name="author" content="Chris Merkord">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.2"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.5/header-attrs.js"></script><script src="libs/jquery-3.5.1/jquery-3.5.1.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.5.3/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.5.3/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.2.2.9000/tabs.js"></script><script src="libs/bs3compat-0.2.2.9000/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script><script src="https://cdn.jsdelivr.net/autocomplete.js/0/autocomplete.jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/mark.js@8.11.1/dist/mark.min.js"></script><!-- CSS -->
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Comparing Populations: Introduction to Data Analysis in R</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">Welcome</a></li>
+<li class="book-part">Getting Started</li>
+<li><a class="" href="get-rstudio.html"><span class="header-section-number">1</span> Get RStudio</a></li>
+<li><a class="" href="create-a-project.html"><span class="header-section-number">2</span> Create A Project</a></li>
+<li><a class="" href="r-as-a-calculator.html"><span class="header-section-number">3</span> R as a Calculator</a></li>
+<li class="book-part">Finch Selection</li>
+<li><a class="" href="introduction.html"><span class="header-section-number">4</span> Introduction</a></li>
+<li><a class="" href="finch-project.html"><span class="header-section-number">5</span> Finch Project</a></li>
+<li><a class="" href="finch-analysis.html"><span class="header-section-number">6</span> Finch Analysis</a></li>
+<li class="book-part">Bluestem Variation</li>
+<li><a class="" href="introduction-1.html"><span class="header-section-number">7</span> Introduction</a></li>
+<li><a class="active" href="bluestem-assignment.html"><span class="header-section-number">8</span> Bluestem Assignment</a></li>
+<li><a class="" href="saving-your-work.html"><span class="header-section-number">9</span> Saving your work</a></li>
+<li class="book-part">Artificial Selection</li>
+<li><a class="" href="introduction-2.html"><span class="header-section-number">10</span> Introduction</a></li>
+<li class="book-part">Appendices</li>
+<li><a class="" href="beak-length-script.html"><span class="header-section-number">11</span> Beak Length Script</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/chrismerkord/mncose20-rlab">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="bluestem-assignment" class="section level1" number="8">
+<h1>
+<span class="header-section-number">8</span> Bluestem Assignment<a class="anchor" aria-label="anchor" href="#bluestem-assignment"><i class="fas fa-link"></i></a>
+</h1>
+<p>In this assignment, you will create a document containing the following:</p>
+<ul>
+<li>A histogram of plant heights</li>
+<li>A bar chart of plant heights</li>
+<li>A histogram of rame lengths</li>
+<li>A bar chart of rame lengths</li>
+<li>Four figure legends, one for each of the figures listed above.</li>
+<li>A section titled <strong>RESULTS</strong> which includes:
+<ul>
+<li>A paragraph describing the difference in plant heights between lowland and upland areas, citing the first two figures and giving the results of the plant height <em>t</em>-test.</li>
+<li>A paragraph describing the difference in rame lengths between lowland and upland areas, citing the last two figures and giving the results of the rame length <em>t</em>-test.</li>
+</ul>
+</li>
+</ul>
+<p>When you’re done, submit the document to your instructor.</p>
+<div id="create-project" class="section level2" number="8.1">
+<h2>
+<span class="header-section-number">8.1</span> Create Project<a class="anchor" aria-label="anchor" href="#create-project"><i class="fas fa-link"></i></a>
+</h2>
+<p>In RStudio Cloud, go back to the <strong>Class Workspace</strong> and click <strong>Start</strong> next to the project named <strong>Bluestem Variation Project</strong>.</p>
+<p>Your assignment involves plotting and analyzing the data on intraspecific variation in big bluestem (<em>Andropogon gerardii</em>) plants that you collected during a field trip to the Regional Science Center. All the data were entered onto a single Excel spreadsheet.</p>
+<p>Each row in the dataset represents an individual plant.</p>
+<p>The variables in the dataset are:</p>
+<ul>
+<li>
+<strong>location</strong> (“lowland” vs. “upland”)</li>
+<li>
+<strong>plant_height</strong> (plant height measured in cm)</li>
+<li>
+<strong>rame_length</strong> (rame length measured in mm)</li>
+</ul>
+</div>
+<div id="create-script" class="section level2" number="8.2">
+<h2>
+<span class="header-section-number">8.2</span> Create script<a class="anchor" aria-label="anchor" href="#create-script"><i class="fas fa-link"></i></a>
+</h2>
+<p>For this assignment, you can use the script you just created to analyze <strong>beak length</strong> as a starting point.</p>
+<p>That script is available here: <a href="beak-length-script.html">Beak Length Script</a></p>
+<ol style="list-style-type: decimal">
+<li>Create a new R script, save it as <code>plant_height.R</code>
+</li>
+<li>It’s always easier to modify existing code than to create new code from scratch. To make sure you start off with a nice clean copy of the beak length code, follow <a href="lab1_beak_length_script.html">this link →</a> to copy the code for the beak length script</li>
+<li>Use “find and replace” (the magnifying glass on the Source tab toolbar) to modify the script.
+<ul>
+<li>replace <code>finches</code> with <code>bluestem</code>
+</li>
+<li>replace <code>beak_length</code> with <code>plant_height</code>
+</li>
+<li>replace <code>outcome</code> with <code>location</code>
+</li>
+<li>replace <code>died</code> with <code>lowland</code> and replace <code>survived</code> with <code>upland</code>
+</li>
+<li>change the x- and y-axis labels on the histogram</li>
+<li>change the x- and y-axis labels on the bar chart</li>
+<li>change the name of the file you save the histogram as</li>
+<li>change the name of the file you save the bar chart as</li>
+</ul>
+</li>
+<li>Save the <code>plant_height.R</code> script</li>
+<li>Run the <code>plant_height.R</code> script, one line at a time, watching for errors. If you performed step 3 correctly, you shouldn’t get any errors.</li>
+<li>Insert the figures into your word document
+<ul>
+<li>Open your project folder in the Finder.</li>
+<li>Open your Word document.</li>
+<li>Drag the figures from the Finder into your open Word document.</li>
+</ul>
+</li>
+</ol>
+</div>
+<div id="repeat-for-rame-length" class="section level2" number="8.3">
+<h2>
+<span class="header-section-number">8.3</span> Repeat for rame length<a class="anchor" aria-label="anchor" href="#repeat-for-rame-length"><i class="fas fa-link"></i></a>
+</h2>
+<p>Now you can repeat the same process for rame length.</p>
+<ol style="list-style-type: decimal">
+<li>With your plant height script <code>plant_height.R</code> open go to <strong>File &gt; Save As</strong> and save the new script as <code>rame_length.R</code>
+</li>
+<li>Use Find and Replace to change <code>plant_height</code> to <code>rame_length</code> throughout.</li>
+<li>Change the axis labels</li>
+<li>Change the file names for saving</li>
+<li>Change the figure titles (e.g. <strong>Figure 1</strong> becomes <strong>Figure 3</strong>, and <strong>2</strong> becomes <strong>4</strong>)</li>
+</ol>
+</div>
+<div id="write-figure-legends" class="section level2" number="8.4">
+<h2>
+<span class="header-section-number">8.4</span> Write figure legends<a class="anchor" aria-label="anchor" href="#write-figure-legends"><i class="fas fa-link"></i></a>
+</h2>
+<p>Write figure legends for each figure in your Word document.</p>
+<p>For reference, here are the figure legends for the finch beak length analysis again:</p>
+<blockquote class="text-info">
+Figure 1. <strong>Distribution of beak lengths among medium ground finches (<i>Geospiza fortis</i>) grouped by outcome during the 1977 drought on Daphne Major, Galapagos archipelago.</strong> Each sample consisted of 50 individuals. Birds were banded and measured during 1975-1977 and resighted in 1978.
+</blockquote>
+<blockquote class="text-info">
+Figure 2. <strong>Mean beak length varied between medium ground finches (<i>Geospiza fortis</i>) that survived or died during the 1977 drought on Daphne Major, Galapagos archipelago.</strong> Each sample consisted of 50 individuals. Birds were banded and measured during 1975-1977 and resighted in 1978. Error bars represent 95% confidence intervals.
+</blockquote>
+<p>For tips on how to write a good figure legend, see <a href="https://www.aje.com/en/arc/writing-effective-figure-legend/">Writing an Effective Figure Legend</a>. In general, a figure legend should provide the following parts:</p>
+<ul>
+<li>Title: A brief title that applies to the entire figure, including all panels.</li>
+<li>Materials and methods: A description of the techniques used.</li>
+<li>Results: A statement of the results that can be gleaned from the particular figure.</li>
+<li>Definitions: An explanation of features in the figure.</li>
+</ul>
+</div>
+<div id="write-a-results-section" class="section level2" number="8.5">
+<h2>
+<span class="header-section-number">8.5</span> Write a RESULTS section<a class="anchor" aria-label="anchor" href="#write-a-results-section"><i class="fas fa-link"></i></a>
+</h2>
+<p>Write a RESULTS section as you might for a report or peer-reviewed article. This section should include:</p>
+<ul>
+<li>A paragraph describing the difference in plant heights between lowland and upland areas, citing the first two figures and giving the results of the plant height <em>t</em>-test.</li>
+<li>A paragraph describing the difference in rame lengths between lowland and upland areas, citing the last two figures and giving the results of the rame length <em>t</em>-test.</li>
+</ul>
+<p>For reference, here is the paragraph we wrote for the beak length analysis:</p>
+<blockquote class="text-info">
+Birds that survived the 1977 drought generally had longer beaks than those that died (Fig. 1). Mean beak lengths were 11.1 mm in survivors and 10.5 mm in non-survivors (Fig. 2). This difference was stastistically significant according to a Welch’s two-sample t-test assuming unequal variances (<em>t</em>=3.6335, <em>df</em>=94.807, <em>p</em>=0.0004539).
+</blockquote>
+</div>
+<div id="upload-word-doc-to-d2l" class="section level2" number="8.6">
+<h2>
+<span class="header-section-number">8.6</span> Upload Word doc to D2L<a class="anchor" aria-label="anchor" href="#upload-word-doc-to-d2l"><i class="fas fa-link"></i></a>
+</h2>
+<p>Once you have all the components in your Word document, save it and upload it to the Assignment area on <a href="https://mnstate.learn.minnstate.edu/">D2L</a>.</p>
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="introduction-1.html"><span class="header-section-number">7</span> Introduction</a></div>
+<div class="next"><a href="saving-your-work.html"><span class="header-section-number">9</span> Saving your work</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#bluestem-assignment"><span class="header-section-number">8</span> Bluestem Assignment</a></li>
+<li><a class="nav-link" href="#create-project"><span class="header-section-number">8.1</span> Create Project</a></li>
+<li><a class="nav-link" href="#create-script"><span class="header-section-number">8.2</span> Create script</a></li>
+<li><a class="nav-link" href="#repeat-for-rame-length"><span class="header-section-number">8.3</span> Repeat for rame length</a></li>
+<li><a class="nav-link" href="#write-figure-legends"><span class="header-section-number">8.4</span> Write figure legends</a></li>
+<li><a class="nav-link" href="#write-a-results-section"><span class="header-section-number">8.5</span> Write a RESULTS section</a></li>
+<li><a class="nav-link" href="#upload-word-doc-to-d2l"><span class="header-section-number">8.6</span> Upload Word doc to D2L</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/chrismerkord/mncose20-rlab/blob/master/bluestem-assignment.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/chrismerkord/mncose20-rlab/edit/master/bluestem-assignment.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Comparing Populations: Introduction to Data Analysis in R</strong>" was written by Chris Merkord. It was last built on 2020-11-13.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>
