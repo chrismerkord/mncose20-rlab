@@ -1,7 +1,3 @@
-part-1.-create-an-rstudio-project
-part-2.-r-as-a-calculator
-part-3.-finch-data-example
-part-4.-bluestem-data-assignment
 introduction
 introduction-1
 introduction-2
