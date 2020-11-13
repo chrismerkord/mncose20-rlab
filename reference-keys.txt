@@ -1,5 +1,10 @@
-pre-requisites
-about-r
+choose-an-rstudio-product
+about-r-and-rstudio
+desktop-vs.-cloud
+rstudio-desktop-setup
+install-r
+install-rstudio
+rstudio-cloud-setup
 open-rstudio-cloud
 create-a-project
 introduction
