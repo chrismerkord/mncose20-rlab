@@ -10,6 +10,14 @@ your-workspace
 create-a-project
 what-are-projects
 create-a-project-in-rstudio-cloud
+r-as-a-calculator
+the-rstudio-ide
+the-console-tab
+r-as-a-calculator-1
+assign-values
+the-environment-tab
+functions
+self-assessment
 introduction
 introduction-1
 introduction-2
