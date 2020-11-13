@@ -2,6 +2,7 @@ Package: placeholder
 Type: Book
 Title: Finches to Bluestem.
 Version: 0.0.1
+Imports: dplyr, ggplot2
 Suggests:
     bookdown,
     bslib,
