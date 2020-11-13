@@ -13,8 +13,12 @@ rmd_files: [
   "finch-analysis.Rmd",
   
   "bluestem-variation.Rmd",
+  "bluestem-assignment.Rmd",
   
   "artificial-selection.Rmd",
+  
+  "beak-length-script.Rmd",
+  
 ]
 
 

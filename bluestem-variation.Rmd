@@ -17,3 +17,5 @@ In other words, exactly the same steps you used to compare finches that died vs.
 The goal of the activity is to answer the following question:
 
 <blockquote class="text-success">Do plant height or rame length of Big Bluestem (<i>Andropogon gerardii</i>) plants vary between lowland and upland sites?</blockquote>
+
+Your document will consist of a Results section containing paragraphs of text followed by figures and figure legends. 
