@@ -9,6 +9,7 @@ Suggests:
     downlit,
     jsonlite,
     htmltools,
+    png,
     xml2
 Remotes: 
     rstudio/bookdown,
