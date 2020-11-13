@@ -1,0 +1,8 @@
+part-1.-create-an-rstudio-project
+part-2.-r-as-a-calculator
+part-3.-finch-data-example
+part-4.-bluestem-data-assignment
+introduction
+about-r
+open-rstudio-cloud
+create-a-project
