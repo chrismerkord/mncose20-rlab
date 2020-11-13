@@ -1,7 +1,8 @@
-# Introduction
+# (PART) Getting Started {-}
+
+# Pre-requisites
 
 In Part 1 of this lab, you will learn what R and RStudio are, how the RStudio environment is organized, and how RStudio organizes your work into Projects. To finish, you will create your first RStudio Project, which you will continue to work in for the rest of the lab.
-
 
 ## About R
 
