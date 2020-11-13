@@ -1,4 +1,17 @@
 delete_merged_file: true
 new_session: yes
 
+rmd_files: [
+  "index.Rmd",
+
+  "getting-started.Rmd",
+
+  "finch-example.Rmd",
+
+  "bluestem-variation.Rmd",
+
+  "artificial-selection.Rmd",
+]
+
+
 before_chapter_script: "_common.R"
