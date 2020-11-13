@@ -92,9 +92,9 @@ For reference, here is the paragraph we wrote for the beak length analysis:
 <blockquote class="text-info">Birds that survived the 1977 drought generally had longer beaks than those that died (Fig. 1). Mean beak lengths were 11.1 mm in survivors and 10.5 mm in non-survivors (Fig. 2).  This difference was stastistically significant according to a Welch's two-sample t-test assuming unequal variances (*t*=3.6335, *df*=94.807, *p*=0.0004539).</blockquote>
 
 
-## Upload Word doc to D2L
+## Submit your assignment
 
-Once you have all the components in your Word document, save it and upload it to the Assignment area on [D2L](https://mnstate.learn.minnstate.edu/).
+Once you have all the components in your Word document, save it and submit it to your instructor.
 
 
 # Saving your work
