@@ -18,7 +18,7 @@ In this activity, we will assuming you are using RStudio Cloud, but we provide i
 
 If you plan to use RStudio Cloud, you can skip the next section.
 
-### RStudio Desktop Setup
+## RStudio Desktop Setup
 
 RStudio Desktop is a free program you download and install on your computer. This is a great option for advanced students or if you plan to work without internet access sometimes.
 
@@ -26,7 +26,7 @@ The downside of RStudio Desktop is that working on your own computer requires a 
 
 To get started with RStudio Desktop, you need to first install R, then install RStudio.
 
-#### Install R
+### Install R
 
 You must install R before you install RStudio.
 
@@ -43,7 +43,7 @@ Directions for installing R:
     b. Download the installer. The link will say something like "Download R 4.0.3 for Windows", but the version number may be different if a newer version has been released.
     c. Open the file and Windows will install R. If you are prompted for options during installation, just select the default options.
     
-#### Install RStudio
+### Install RStudio
 
 Make sure you have installed R before you try to install RStudio.
 
@@ -56,48 +56,20 @@ RStuio Desktop `RStudio.Version()$version`.
 
 <img src="screenshots/download-rstudio.png" width="75%" style="display: block; margin: auto;" />
 
-### RStudio Cloud Setup
+## RStudio Cloud Setup
 
-RStudio Cloud is basically a version of RStudio that runs in a web browser.
-
-In this activity, you will use RStudio Cloud, an online version of RStudio that requires less initial setup and is good for learning in a classroom setting. 
-
-
-In Part 1 of this lab, you will learn what R and RStudio are, how the RStudio environment is organized, and how RStudio organizes your work into Projects. To finish, you will create your first RStudio Project, which you will continue to work in for the rest of the lab.
-
-## Open RStudio Cloud
+### Sign up
 
 First, make sure you have an RStudio Cloud account. Go to https://rstudio.cloud/ and click "Sign Up" or "Get Started for Free". Choose the "Cloud Free" plan and continue.
 
 Use an email address and password of your choice (they do not have to be your MSUM ones). You will have to confirm your email address after registering. To do so, go to your email account, find the message from RStudio Cloud, and click the link to confirm the email address is yours.
 
+### Your Workspace
+
 Next, sign in to RStudio Cloud.
 
 Every RStudio Cloud user gets a personal workspace, named **Your Workspace**, in which to create projects. When you sign in, you will start out in Your Workspace.
 
-In the future, this is where you will see a list of your projects. For now, it will say "no project". Click the image below to see an example.
+In the future, this is where you will see a list of your projects. For now, it will say "no project".
 
-<figure class="figure">
-  <a href="images/rstudio_cloud_your_workspace.png" data-lightbox="rstudio-start" data-title="Your Workspace in RStudio Cloud."><img src="images/rstudio_cloud_your_workspace.png" class="figure-img img-thumbnail"></a>
-  <figcaption class="figure-caption">Your Workspace in RStudio Cloud.</figcaption>
-</figure>
-
-
-## Create a Project
-
-RStudio projects make it straightforward to divide your work into multiple contexts, each with their own working directory, workspace, history, and source documents (scripts), and data files.
-
-To create a new project:
-
-1. Go to Your Workspace
-2. Go to the Projects area
-2. Click the button to start a New Project
-
-<figure class="figure">
-  <a href="images/rstudio_cloud_new_project.png" data-lightbox="rstudio-start" data-title="Create a new project."><img src="images/rstudio_cloud_new_project.png" class="figure-img img-thumbnail"></a>
-  <figcaption class="figure-caption">Create a new project.</figcaption>
-</figure>
-
-Wait a moment while your new project is deployed.
-
-When the screen refreshes you will have a new, empty project and you can move on to Part 2.
+<img src="screenshots/rstudio_cloud_your_workspace.png" width="75%" style="display: block; margin: auto;" />
