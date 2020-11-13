@@ -1,0 +1,47 @@
+# Read the data
+
+Now that you have a script and have loaded the necessary packages, you're ready to get coding!
+
+To read the data, you will use a function named `read_excel()`. Here we run that function and assign the results to an object names `finches`.
+
+```{r}
+# read data ----------------------------------------------------------------
+
+# read the finches data
+finches <- read_excel("finches_data.xlsx")
+```
+
+
+If you get an error at this point (red text in the console output) see the two warnings below.
+
+<span class="label label-warning">Warning</span> If you didn't run the two `library()` commands, then when your run `read_excel()` you will get an error that says:
+
+`Error in read_excel() : could not find function "read_excel"`
+
+To solve this error, run the two `library()` commands and then retry reading the data.
+
+<p class="text-success">To look at an object you have just created, print it to the console window by <strong>typing its name and running it</strong>:</p>
+
+```{r print-finches}
+# print the results in the console
+finches
+```
+
+The first thing you notice is that this object is not a vector like the objects you were working with before. Instead, it's a **tibble**, which is an object that stores tabular data.
+
+The first line of the output gives the data type (tibble) and dimensions of the data (number of rows x number of columns). In the tidyverse, columns are referred to as "variables".
+
+The first 10 rows are shown, as well as the first few variables. How many variables depends on how wide your Console window is.
+
+For each variable, it's name is given, followed by the type of data. Most of the time we worth with either numeric data (`<dbl>`) or text data (`<chr>`).
+
+If there are more than 10 rows, or more variables than can fit on the screen, there will be a sentence at the end saying "... with xx more rows, and x more variables", followed by a list of the unshown variables.
+
+A quick way of seeing the first few observations for all variables is to use the `glimpse()` function:
+
+```{r}
+# take a quick look at all the variables in the dataset
+glimpse(finches)
+```
+
+If you want to see the entire dataset, click the name of the data object in the Environment tab, or run `View(finches)`. This will open a handy data viewer window. Once you are done looking at the data, close the window and continue.
