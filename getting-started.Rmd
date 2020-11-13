@@ -1,6 +1,6 @@
 # (PART) Getting Started {-}
 
-# Choose an RStudio product
+# Get RStudio
 
 Your first task is to choose how you will work with R. To do that, you should understand the difference between R and RStudio, and know what your options are for running RStudio.
 
