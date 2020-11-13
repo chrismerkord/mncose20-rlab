@@ -36,7 +36,7 @@ If your instructor has not set up a course workspace, you can download the Excel
 
 If you want, you can click on the file name to download and open it with Microsoft Excel. 
 
-# Inspect data file
+## Inspect data file
 
 Test your understanding by answering the following questions with your lab partner. You do not have to turn this in.
 
@@ -46,3 +46,4 @@ Test your understanding by answering the following questions with your lab partn
 - **What are the names of the variables?** (The first row contains the variable names) Note that the names are not capitalized and use underscores (`_`) instead of spaces. This is important when writing R code.
 
 Close the Excel file and switch back to RStudio Cloud.
+
