@@ -3,17 +3,17 @@ new_session: yes
 
 rmd_files: [
   "index.Rmd",
-
+  
   "getting-started.Rmd",
   "create-project.Rmd",
   "calculator.Rmd",
-
+  
   "finch-example.Rmd",
   "finch-project.Rmd",
   "finch-analysis.Rmd",
-
+  
   "bluestem-variation.Rmd",
-
+  
   "artificial-selection.Rmd",
 ]
 
