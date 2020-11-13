@@ -1,0 +1,14 @@
+Package: placeholder
+Type: Book
+Title: Finches to Bluestem.
+Version: 0.0.1
+Imports: bookdown
+Suggests:
+    bookdown,
+    bslib,
+    downlit,
+    jsonlite,
+    xml2
+Remotes: 
+    rstudio/bookdown,
+    rstudio/bslib

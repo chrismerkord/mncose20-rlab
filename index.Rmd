@@ -1,0 +1,44 @@
+--- 
+knit: "bookdown::render_book"
+title: "Finches to Bluestem: Introduction to Data Analysis in R"
+author: "Chris Merkord"
+date: "`r Sys.Date()`"
+github-repo: chrismerkord/mncose20-rlab
+description: "An introduction to Data Analysis in R developed for MnCOSE 2020."
+site: bookdown::bookdown_site
+documentclass: book
+---
+
+# Welcome {-}
+
+Welcome to the Finches to Bluestem Lab.
+
+In this lab you will learn how to view, summarize, and graph data.
+
+Your assignment is to generate figures and statistical analyses that answer the following question:
+
+<blockquote class="text-success">Do plant height or rame length of Big Bluestem (<i>Andropogon gerardii</i>) plants vary between lowland and upland sites?</blockquote>
+
+Parts 1 to 3 of this lab will teach you how to use R and RStudio. Part 4 contains the instructions for the assignment you will turn in for your grade.
+
+Read below before starting for a quick overview of each part of the lab.
+
+#### [Part 1. Create an RStudio Project](lab1_1_rstudio.html)
+
+In Part 1 of this lab, you will learn what R and RStudio are, how the RStudio environment is organized, and how RStudio organizes your work into Projects. To finish, you will create your first RStudio Project, which you will continue to work in for the rest of the lab.
+
+#### [Part 2. R as a Calculator](lab1_2_calc.html)
+
+In Part 2 of this lab, you will learn how to use the Console Window to run commands as you perform basic arithmetic operations. You will learn the basics of using functions, and finally learn about creating objects using the assignment operator.
+
+#### [Part 3. Finch Data Example](lab1_3_finch.html)
+
+In Part 3 of this lab, you will be introduced to R scripts. You will use the Finches dataset to learn how to read a tabular dataset into R, inspect it, and perform basic statistical summaries on it. You will estimate means, standard deviations, standard errors of the mean, and confidence intervals around the mean. You will also learn how to plot histograms and barplots.
+
+#### [Part 4. Bluestem Data Assignment](lab1_4_bluestem.html)
+
+In Part 4, you will apply what you have learned to the bluestem variation data you collected at the Regional Science Center. You will create a new R script, read the bluestem data into R, plot histograms of plant height and rame length, estimate the means of those variables, plot them on barplots.
+
+## Acknowledgements {-}
+
+This website is hosted by GitHub Pages.

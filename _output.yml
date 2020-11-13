@@ -1,0 +1,16 @@
+bookdown::bs4_book:
+  theme:
+    primary: "#637238"
+  repo: https://github.com/chrismerkord/mncose20-rlab
+
+bookdown::gitbook:
+  config:
+    toc:
+      collapse: section
+      before: |
+        <li><strong><a href="./">Finches to Bluestem: Introduction to Data Analysis in R</a></strong></li>
+    sharing: no
+  css: style.css
+
+bookdown::pdf_book:
+  latex_engine: xelatex
