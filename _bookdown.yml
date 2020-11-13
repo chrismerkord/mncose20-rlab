@@ -12,6 +12,7 @@ rmd_files: [
   "finch-project.Rmd",
   "r-scripts.Rmd",
   "read-data.Rmd",
+  "histogram.Rmd",
 
   "bluestem-variation.Rmd",
 
