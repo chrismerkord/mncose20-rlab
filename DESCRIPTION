@@ -2,7 +2,7 @@ Package: placeholder
 Type: Book
 Title: Comparing Populations.
 Version: 0.0.1
-Imports: dplyr, ggplot2
+Imports: readxl, tidyverse
 Suggests:
     bookdown,
     bslib,
