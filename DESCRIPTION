@@ -10,6 +10,7 @@ Suggests:
     jsonlite,
     htmltools,
     png,
+    readxl,
     xml2
 Remotes: 
     rstudio/bookdown,
