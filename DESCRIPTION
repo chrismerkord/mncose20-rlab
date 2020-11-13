@@ -9,8 +9,10 @@ Suggests:
     downlit,
     jsonlite,
     htmltools,
+    rmarkdown,
     xml2
 Remotes: 
     rstudio/bookdown,
     rstudio/bslib,
     rstudio/htmltools
+    rstudio/rmarkdown
