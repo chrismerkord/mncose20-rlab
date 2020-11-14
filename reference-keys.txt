@@ -47,6 +47,7 @@ conduct-a-t-test
 interpret-the-results
 bluestem-variation
 introduction-1
+the-question
 your-assignment
 bluestem-assignment
 create-project
@@ -59,7 +60,7 @@ submit-your-assignment
 saving-your-work
 artificial-selection
 introduction-2
-the-question
+the-question-1
 start-your-project
 create-a-new-script
 look-at-the-fast-plant-data
