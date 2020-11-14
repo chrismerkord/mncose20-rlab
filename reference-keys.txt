@@ -51,7 +51,9 @@ the-question
 your-assignment
 bluestem-assignment
 create-project
+find-the-data
 create-script
+look-at-the-blustem-data
 modify-script
 repeat-for-rame-length
 write-figure-legends
@@ -61,7 +63,8 @@ saving-your-work
 artificial-selection
 introduction-2
 the-question-1
-start-your-project
+create-project-1
+find-the-data-1
 create-a-new-script
 look-at-the-fast-plant-data
 your-assignment-1

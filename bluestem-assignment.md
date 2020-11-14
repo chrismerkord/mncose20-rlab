@@ -15,17 +15,18 @@ When you're done, submit the document to your instructor.
 
 ## Create Project
 
-In RStudio Cloud, go back to the **Class Workspace** and click **Start** next to the project named **Bluestem Variation Project**.
+Follow these directions to get started:
 
-Your assignment involves plotting and analyzing the data on intraspecific variation in big bluestem (*Andropogon gerardii*) plants that you collected during a field trip to the Regional Science Center. All the data were entered onto a single Excel spreadsheet.
+1. Go to [RStudio Cloud](https://rstudio.cloud/) and sign in. 
+2. On the left, under Spaces, click on **Course Workspace**
+3. Click the **Start** button on the **Bluestem Variation Project** assignment.
 
-Each row in the dataset represents an individual plant.
+## Find the data
 
-The variables in the dataset are:
+When your project starts, look at the **Files** tab in the lower right pane.
 
-- **location** ("lowland" vs. "upland")
-- **plant_height** (plant height measured in cm)
-- **rame_length** (rame length measured in mm)
+There are two files you should take note of:
+- [bluestem_data.xlsx](bluestem_data.xlsx) - this is the data file you will use. If it's not in your project folder, download it here and upload to the folder.
 
 ## Create script
 
@@ -34,6 +35,22 @@ It's always easier to modify existing code than to create new code from scratch.
 For this assignment, you can use the code you just created to analyze **beak length** as a starting point.
 
 Create a new R script, save it as `plant_height.R`. Then go to the [Beak Length Script](beak-length-script.html), copy the code, and paste it into your new plant height script.
+
+## Look at the blustem data
+
+In your new script, adjust the code so that it reads the bluestem_data.xlsx instead of finches_data.xlsx. Also be sure to change the name you give the data after your read it in.
+
+
+
+Run the code and note the data object which appeared in your Environment tab. Click on the blue table icon to the right of the object name to open the data viewer window.
+
+Each row in the dataset represents an individual plant.
+
+The variables in the dataset are:
+
+- **location** ("lowland" vs. "upland")
+- **plant_height** (plant height measured in cm)
+- **rame_length** (rame length measured in mm)
 
 ## Modify script
 
