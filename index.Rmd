@@ -1,7 +1,7 @@
 --- 
 knit: "bookdown::render_book"
 title: "Comparing Populations: Introduction to Data Analysis in R"
-author: "Chris Merkord"
+author: "Chris Merkord and Katie Olson"
 date: "`r Sys.Date()`"
 github-repo: chrismerkord/mncose20-rlab
 description: "A beginners guide to data analysis in R focused on comparing phenotypic variation in biological populations. Originally developed for the Organismal Biology Lab BIOL 115L at Minnesota State University by Chris Merkord, Alison Wallace, and others. Updated here for MnCOSE 2020."
