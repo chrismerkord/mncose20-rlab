@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Welcome | Comparing Populations: Introduction to Data Analysis in R</title>
+<title>7 Bluestem Variation | Comparing Populations: Introduction to Data Analysis in R</title>
 <meta name="author" content="Chris Merkord and Katie Olson">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.2"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/header-attrs-2.5/header-attrs.js"></script><script src="libs/jquery-3.5.1/jquery-3.5.1.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.5.3/bootstrap.min.css" rel="stylesheet">
@@ -31,7 +31,7 @@
 
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
         <ul class="book-toc list-unstyled">
-<li><a class="active" href="index.html">Welcome</a></li>
+<li><a class="" href="index.html">Welcome</a></li>
 <li class="book-part">Getting Started</li>
 <li><a class="" href="get-rstudio.html"><span class="header-section-number">1</span> Get RStudio</a></li>
 <li><a class="" href="create-a-project.html"><span class="header-section-number">2</span> Create A Project</a></li>
@@ -41,7 +41,7 @@
 <li><a class="" href="finch-project.html"><span class="header-section-number">5</span> Finch Project</a></li>
 <li><a class="" href="finch-analysis.html"><span class="header-section-number">6</span> Finch Analysis</a></li>
 <li class="book-part">Bluestem Variation</li>
-<li><a class="" href="bluestem-variation.html"><span class="header-section-number">7</span> Bluestem Variation</a></li>
+<li><a class="active" href="bluestem-variation.html"><span class="header-section-number">7</span> Bluestem Variation</a></li>
 <li><a class="" href="bluestem-assignment.html"><span class="header-section-number">8</span> Bluestem Assignment</a></li>
 <li class="book-part">Artificial Selection</li>
 <li><a class="" href="artificial-selection.html"><span class="header-section-number">9</span> Artificial Selection</a></li>
@@ -54,49 +54,47 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><!--bookdown:title:end--><!--bookdown:title:start--><div id="welcome" class="section level1 unnumbered" number="">
-<h1>Welcome<a class="anchor" aria-label="anchor" href="#welcome"><i class="fas fa-link"></i></a>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="bluestem-variation" class="section level1" number="7">
+<h1>
+<span class="header-section-number">7</span> Bluestem Variation<a class="anchor" aria-label="anchor" href="#bluestem-variation"><i class="fas fa-link"></i></a>
 </h1>
-<p>Welcome to the website for <em>Comparing Populations: Introduction to Data Analysis in R</em>. The site serves as a beginners guide to data analysis in R. In this activity students learn to use R and RStudio to comparing phenotypic variation in biological populations.</p>
-<div class="mx-auto" style="width: 320px;">
-<p><iframe width="320" height="446" src="https://macaulaylibrary.org/asset/83940941/embed/320" frameborder="0" allowfullscreen style="width:320px;"></iframe></p>
-</div>
-<p>This activity was originally developed for the Organismal Biology Lab BIOL 115L at Minnesota State University by Chris Merkord, Alison Wallace, and others.</p>
-<p>This version was prepared for the MnCOSE 2020 conference by Chris Merkord and Katie Olson.</p>
-<p>In this lab you will learn how to view, summarize, and graph data.</p>
-<p>Parts 1 to 3 of this lab will teach you how to use R and RStudio. Part 4 contains the instructions for the assignment you will turn in for your grade.</p>
-<ul>
-<li>In Part 1 of this lab, you will learn what R and RStudio are, how the RStudio environment is organized, and how RStudio organizes your work into Projects. To finish, you will create your first RStudio Project, which you will continue to work in for the rest of the lab.</li>
-<li>In Part 2 of this lab, you will learn how to use the Console Window to run commands as you perform basic arithmetic operations. You will learn the basics of using functions, and finally learn
-about creating objects using the assignment operator.</li>
-<li>In Part 3 of this lab, you will be introduced to R scripts. You will use the Finches dataset to learn
-how to read a tabular dataset into R, inspect it, and perform basic statistical summaries on it. You will estimate means, standard deviations, standard errors of the mean, and confidence intervals around the mean. You will also learn how to plot histograms and barplots.</li>
-<li>In Part 4, you will apply what you have learned to the bluestem variation data you collected at the Regional Science Center. You will create a new R script, read the bluestem data into R, plot histograms of plant height and rame length, estimate the means of those variables, plot them on barplots.</li>
-</ul>
-<div id="acknowledgements" class="section level2 unnumbered" number="">
-<h2>Acknowledgements<a class="anchor" aria-label="anchor" href="#acknowledgements"><i class="fas fa-link"></i></a>
+<div id="introduction-1" class="section level2" number="7.1">
+<h2>
+<span class="header-section-number">7.1</span> Introduction<a class="anchor" aria-label="anchor" href="#introduction-1"><i class="fas fa-link"></i></a>
 </h2>
-<p>This website is hosted by GitHub Pages.</p>
+<p>In this activity you will apply what you have learned in Finch Example to a new dataset.</p>
+<p>Students at Minnesota State University Moorhead collected data at the MSUM Regional Science Center to compare how Big Bluestem (<em>Andropogon gerardii</em>) plants allocate energy towards growth and reproduction.</p>
+<p>They measured the height and rame length of hundreds of plants in two locations: a <strong>lowland</strong> site closer to the water table, with more clay content in the soil, and a nearby <strong>upland</strong> site further from the water table and with more sand content in the soil. Plant height is a proxy for growth, and rame length is a proxy for reproduction.</p>
+</div>
+<div id="your-assignment" class="section level2" number="7.2">
+<h2>
+<span class="header-section-number">7.2</span> Your assignment<a class="anchor" aria-label="anchor" href="#your-assignment"><i class="fas fa-link"></i></a>
+</h2>
+<p>In this activity, you will create a new R script, read the bluestem data into R, plot histograms of plant height and rame length, estimate the means of those variables, plot them on bar charts, and compare the means using a t-test.</p>
+<p>In other words, exactly the same steps you used to compare finches that died vs. survived in the Finch Example.</p>
+<p>The goal of the activity is to answer the following question:</p>
+<blockquote class="text-success">
+Do plant height or rame length of Big Bluestem (<i>Andropogon gerardii</i>) plants vary between lowland and upland sites?
+</blockquote>
+<p>Your document will consist of a Results section containing paragraphs of text followed by figures and figure legends.</p>
 
 </div>
 </div>
-
-
-
   <div class="chapter-nav">
-<div class="empty"></div>
-<div class="next"><a href="get-rstudio.html"><span class="header-section-number">1</span> Get RStudio</a></div>
+<div class="prev"><a href="finch-analysis.html"><span class="header-section-number">6</span> Finch Analysis</a></div>
+<div class="next"><a href="bluestem-assignment.html"><span class="header-section-number">8</span> Bluestem Assignment</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#welcome">Welcome</a></li>
-<li><a class="nav-link" href="#acknowledgements">Acknowledgements</a></li>
+<li><a class="nav-link" href="#bluestem-variation"><span class="header-section-number">7</span> Bluestem Variation</a></li>
+<li><a class="nav-link" href="#introduction-1"><span class="header-section-number">7.1</span> Introduction</a></li>
+<li><a class="nav-link" href="#your-assignment"><span class="header-section-number">7.2</span> Your assignment</a></li>
 </ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-<li><a id="book-source" href="https://github.com/chrismerkord/mncose20-rlab/blob/master/index.Rmd">View source <i class="fab fa-github"></i></a></li>
-          <li><a id="book-edit" href="https://github.com/chrismerkord/mncose20-rlab/edit/master/index.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+<li><a id="book-source" href="https://github.com/chrismerkord/mncose20-rlab/blob/master/bluestem-variation.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/chrismerkord/mncose20-rlab/edit/master/bluestem-variation.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
 </div>
     </nav>

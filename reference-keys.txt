@@ -45,6 +45,7 @@ plot-summarized-data
 compare-means
 conduct-a-t-test
 interpret-the-results
+bluestem-variation
 introduction-1
 your-assignment
 bluestem-assignment
@@ -55,6 +56,7 @@ write-figure-legends
 write-a-results-section
 submit-your-assignment
 saving-your-work
+artificial-selection
 introduction-2
 the-question
 start-your-project

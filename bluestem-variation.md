@@ -1,6 +1,8 @@
 # (PART) Bluestem Variation {-}
 
-# Introduction
+# Bluestem Variation
+
+## Introduction
 
 In this activity you will apply what you have learned in Finch Example to a new dataset.
 
