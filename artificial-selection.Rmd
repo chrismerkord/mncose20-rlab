@@ -1,6 +1,8 @@
 # (PART) Artificial Selection {-}
 
-# Introduction
+# Artificial Selection
+
+## Introduction
 
 In this activity you will apply what you learned in the Finch Example and the Bluestem Variation activities to analyze a new dataset.
 
