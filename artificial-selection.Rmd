@@ -16,13 +16,15 @@ The question you are trying to answer in this activity is:
 
 <blockquote class="text-success">Does the number of trichomes on Fast Plants (<i>Brassica rapa</i>) plants vary between the F0 (parent) and F1 (offspring) generations.</blockquote>
 
-## Start your project
+## Create Project
 
 Follow these directions to get started:
 
 1. Go to [RStudio Cloud](https://rstudio.cloud/) and sign in. 
 2. On the left, under Spaces, click on **Course Workspace**
 3. Click the **Start** button on the **Artificial Selection Project** assignment.
+
+## Find the data
 
 When your project starts, look at the **Files** tab in the lower right pane.
 
