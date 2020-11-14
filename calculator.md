@@ -32,7 +32,7 @@ For the rest of this tutorial, we will use the following notation to indicate co
 #> [1] 1
 ```
 
-Note that in our examples, we do not show the prompt and we add two hash marks `##` to indicate lines of output.
+Note that in our examples, we do not show the prompt and we add two hash marks `#>` to indicate lines of output.
 
 <span class="label label-info">Tip</span> If you ever try to type something in the console and nothing happens, it may be because some other pane has RStudio's attention. Click the Console pane and make sure the blinking cursor is showing.
 
