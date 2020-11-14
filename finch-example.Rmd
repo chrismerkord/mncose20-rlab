@@ -12,4 +12,4 @@ The question you are tasked with answering for Part 3 is:
 
 ## The finch dataset
 
-In the finch dataset, each row represents an individual bird that was banded before the 1977 drought on Daphne Major island in the Galapagos archipelago. The variable named `outcome` contains one of two values: "survived" or "died", depending on whether the bird was ever seen after the drought or not.
+In the finch dataset, each row represents an individual bird that was banded before the 1977 drought on Daphne Major island in the Galapagos archipelago. The variable named `outcome` contains one of two values: **survived** or **died**, depending on whether the bird was ever seen after the drought or not.
