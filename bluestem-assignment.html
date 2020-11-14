@@ -94,13 +94,18 @@
 <h2>
 <span class="header-section-number">8.2</span> Create script<a class="anchor" aria-label="anchor" href="#create-script"><i class="fas fa-link"></i></a>
 </h2>
-<p>For this assignment, you can use the script you just created to analyze <strong>beak length</strong> as a starting point.</p>
-<p>That script is available here: <a href="beak-length-script.html">Beak Length Script</a></p>
-<ol style="list-style-type: decimal">
-<li>Create a new R script, save it as <code>plant_height.R</code>
-</li>
-<li>It’s always easier to modify existing code than to create new code from scratch. To make sure you start off with a nice clean copy of the beak length code, follow <a href="lab1_beak_length_script.html">this link →</a> to copy the code for the beak length script</li>
-<li>Use “find and replace” (the magnifying glass on the Source tab toolbar) to modify the script.
+<p>It’s always easier to modify existing code than to create new code from scratch.</p>
+<p>For this assignment, you can use the code you just created to analyze <strong>beak length</strong> as a starting point.</p>
+<p>Create a new R script, save it as <code>plant_height.R</code>. Then go to the <a href="beak-length-script.html">Beak Length Script</a>, copy the code, and paste it into your new plant height script.</p>
+</div>
+<div id="modify-script" class="section level2" number="8.3">
+<h2>
+<span class="header-section-number">8.3</span> Modify script<a class="anchor" aria-label="anchor" href="#modify-script"><i class="fas fa-link"></i></a>
+</h2>
+<p>Go through the script looking for code that refers to finches or variables in the finches dataset.</p>
+<p>Replace each instance with the analogous word or variable name for the bluestem dataset.</p>
+<p>If you are feeling saavy, use “find and replace” (the magnifying glass on the Source tab toolbar) to modify the script. Be careful, though! With great power comes great responsibility. It’s easy to accidentally replace something you didn’t mean to. And triple check your spelling before you Replace All. Remember that R is case sensitive and don’t mistake any underscores for spaces.</p>
+<p>To get you moving along, here are some suggestions:</p>
 <ul>
 <li>replace <code>finches</code> with <code>bluestem</code>
 </li>
@@ -115,21 +120,12 @@
 <li>change the name of the file you save the histogram as</li>
 <li>change the name of the file you save the bar chart as</li>
 </ul>
-</li>
-<li>Save the <code>plant_height.R</code> script</li>
-<li>Run the <code>plant_height.R</code> script, one line at a time, watching for errors. If you performed step 3 correctly, you shouldn’t get any errors.</li>
-<li>Insert the figures into your word document
-<ul>
-<li>Open your project folder in the Finder.</li>
-<li>Open your Word document.</li>
-<li>Drag the figures from the Finder into your open Word document.</li>
-</ul>
-</li>
-</ol>
+<p>Now save the <code>plant_height.R</code> script. If you see any red x’s pop up on the left side of your script, those indicate potential errors. Hover your mouse over them to see the error message and try to solve the problem before you run the code. Your instructor or a friend will come in handy with solving any errors.</p>
+<p>Finally, run the <code>plant_height.R</code> script, one line at a time, watching for errors and looking closely at any figures you generate. If you get an error or notice a mistake, fix it and start running the code again from the top.</p>
 </div>
-<div id="repeat-for-rame-length" class="section level2" number="8.3">
+<div id="repeat-for-rame-length" class="section level2" number="8.4">
 <h2>
-<span class="header-section-number">8.3</span> Repeat for rame length<a class="anchor" aria-label="anchor" href="#repeat-for-rame-length"><i class="fas fa-link"></i></a>
+<span class="header-section-number">8.4</span> Repeat for rame length<a class="anchor" aria-label="anchor" href="#repeat-for-rame-length"><i class="fas fa-link"></i></a>
 </h2>
 <p>Now you can repeat the same process for rame length.</p>
 <ol style="list-style-type: decimal">
@@ -141,9 +137,9 @@
 <li>Change the figure titles (e.g. <strong>Figure 1</strong> becomes <strong>Figure 3</strong>, and <strong>2</strong> becomes <strong>4</strong>)</li>
 </ol>
 </div>
-<div id="write-figure-legends" class="section level2" number="8.4">
+<div id="write-figure-legends" class="section level2" number="8.5">
 <h2>
-<span class="header-section-number">8.4</span> Write figure legends<a class="anchor" aria-label="anchor" href="#write-figure-legends"><i class="fas fa-link"></i></a>
+<span class="header-section-number">8.5</span> Write figure legends<a class="anchor" aria-label="anchor" href="#write-figure-legends"><i class="fas fa-link"></i></a>
 </h2>
 <p>Write figure legends for each figure in your Word document.</p>
 <p>For reference, here are the figure legends for the finch beak length analysis again:</p>
@@ -161,9 +157,9 @@ Figure 2. <strong>Mean beak length varied between medium ground finches (<i>Geos
 <li>Definitions: An explanation of features in the figure.</li>
 </ul>
 </div>
-<div id="write-a-results-section" class="section level2" number="8.5">
+<div id="write-a-results-section" class="section level2" number="8.6">
 <h2>
-<span class="header-section-number">8.5</span> Write a RESULTS section<a class="anchor" aria-label="anchor" href="#write-a-results-section"><i class="fas fa-link"></i></a>
+<span class="header-section-number">8.6</span> Write a RESULTS section<a class="anchor" aria-label="anchor" href="#write-a-results-section"><i class="fas fa-link"></i></a>
 </h2>
 <p>Write a RESULTS section as you might for a report or peer-reviewed article. This section should include:</p>
 <ul>
@@ -175,15 +171,15 @@ Figure 2. <strong>Mean beak length varied between medium ground finches (<i>Geos
 Birds that survived the 1977 drought generally had longer beaks than those that died (Fig. 1). Mean beak lengths were 11.1 mm in survivors and 10.5 mm in non-survivors (Fig. 2). This difference was stastistically significant according to a Welch’s two-sample t-test assuming unequal variances (<em>t</em>=3.6335, <em>df</em>=94.807, <em>p</em>=0.0004539).
 </blockquote>
 </div>
-<div id="submit-your-assignment" class="section level2" number="8.6">
+<div id="submit-your-assignment" class="section level2" number="8.7">
 <h2>
-<span class="header-section-number">8.6</span> Submit your assignment<a class="anchor" aria-label="anchor" href="#submit-your-assignment"><i class="fas fa-link"></i></a>
+<span class="header-section-number">8.7</span> Submit your assignment<a class="anchor" aria-label="anchor" href="#submit-your-assignment"><i class="fas fa-link"></i></a>
 </h2>
 <p>Once you have all the components in your Word document, save it and submit it to your instructor.</p>
 </div>
-<div id="saving-your-work" class="section level2" number="8.7">
+<div id="saving-your-work" class="section level2" number="8.8">
 <h2>
-<span class="header-section-number">8.7</span> Saving your work<a class="anchor" aria-label="anchor" href="#saving-your-work"><i class="fas fa-link"></i></a>
+<span class="header-section-number">8.8</span> Saving your work<a class="anchor" aria-label="anchor" href="#saving-your-work"><i class="fas fa-link"></i></a>
 </h2>
 <p>All of your files, including R scripts and image files, will be saved on RStudio Cloud. You can return any time to rerun your code, edit a script, or download a file.</p>
 
@@ -201,11 +197,12 @@ Birds that survived the 1977 drought generally had longer beaks than those that 
 <li><a class="nav-link" href="#bluestem-assignment"><span class="header-section-number">8</span> Bluestem Assignment</a></li>
 <li><a class="nav-link" href="#create-project"><span class="header-section-number">8.1</span> Create Project</a></li>
 <li><a class="nav-link" href="#create-script"><span class="header-section-number">8.2</span> Create script</a></li>
-<li><a class="nav-link" href="#repeat-for-rame-length"><span class="header-section-number">8.3</span> Repeat for rame length</a></li>
-<li><a class="nav-link" href="#write-figure-legends"><span class="header-section-number">8.4</span> Write figure legends</a></li>
-<li><a class="nav-link" href="#write-a-results-section"><span class="header-section-number">8.5</span> Write a RESULTS section</a></li>
-<li><a class="nav-link" href="#submit-your-assignment"><span class="header-section-number">8.6</span> Submit your assignment</a></li>
-<li><a class="nav-link" href="#saving-your-work"><span class="header-section-number">8.7</span> Saving your work</a></li>
+<li><a class="nav-link" href="#modify-script"><span class="header-section-number">8.3</span> Modify script</a></li>
+<li><a class="nav-link" href="#repeat-for-rame-length"><span class="header-section-number">8.4</span> Repeat for rame length</a></li>
+<li><a class="nav-link" href="#write-figure-legends"><span class="header-section-number">8.5</span> Write figure legends</a></li>
+<li><a class="nav-link" href="#write-a-results-section"><span class="header-section-number">8.6</span> Write a RESULTS section</a></li>
+<li><a class="nav-link" href="#submit-your-assignment"><span class="header-section-number">8.7</span> Submit your assignment</a></li>
+<li><a class="nav-link" href="#saving-your-work"><span class="header-section-number">8.8</span> Saving your work</a></li>
 </ul>
 
       <div class="book-extra">
