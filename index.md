@@ -2,7 +2,7 @@
 knit: "bookdown::render_book"
 title: "Comparing Populations: Introduction to Data Analysis in R"
 author: "Chris Merkord"
-date: "2020-11-13"
+date: "2020-11-14"
 github-repo: chrismerkord/mncose20-rlab
 description: "A beginners guide to data analysis in R focused on comparing phenotypic variation in biological populations. Originally developed for the Organismal Biology Lab BIOL 115L at Minnesota State University by Chris Merkord, Alison Wallace, and others. Updated here for MnCOSE 2020."
 site: bookdown::bookdown_site
@@ -12,6 +12,10 @@ documentclass: book
 # Welcome {-}
 
 Welcome to the website for *Comparing Populations: Introduction to Data Analysis in R*. The site serves as a beginners guide to data analysis in R. In this activity students learn to use R and RStudio to comparing phenotypic variation in biological populations.
+
+<div class="mx-auto" style="width: 320px;">
+  <iframe width="320" height="446" src="https://macaulaylibrary.org/asset/83940941/embed/320" frameborder="0" allowfullscreen style="width:320px;"></iframe>
+</div>
 
 This activity was originally developed for the Organismal Biology Lab BIOL 115L at Minnesota State University by Chris Merkord, Alison Wallace, and others.
 
