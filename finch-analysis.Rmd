@@ -48,6 +48,8 @@ In this tutorial you will use a group of packages collectively referred to as th
 
 Before you can use a package, you need to download and install it. In RStudio Cloud, we have already done this step for you by running `install.packages("tidyverse")` so you can skip this step.
 
+If you are using RStudio Desktop, you will need to install the package first. In which case, you can either run the code above or use the Packages tab.
+
 ## Load the packages
 
 Below you will see two boxes, one with comments and code, and the next with example console output. The console output is just there to show you what to expect to appear in the console when you run the given code. Console output in this tutorial always appears in a box below the code, and has two pound signs before each line like this: `##`
