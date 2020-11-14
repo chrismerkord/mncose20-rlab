@@ -97,6 +97,6 @@ For reference, here is the paragraph we wrote for the beak length analysis:
 Once you have all the components in your Word document, save it and submit it to your instructor.
 
 
-# Saving your work
+## Saving your work
 
 All of your files, including R scripts and image files, will be saved on RStudio Cloud. You can return any time to rerun your code, edit a script, or download a file.
