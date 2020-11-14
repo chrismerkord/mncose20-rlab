@@ -29,28 +29,34 @@ The variables in the dataset are:
 
 ## Create script
 
-For this assignment, you can use the script you just created to analyze **beak length** as a starting point.
+It's always easier to modify existing code than to create new code from scratch. 
 
-That script is available here: [Beak Length Script](beak-length-script.html)
+For this assignment, you can use the code you just created to analyze **beak length** as a starting point.
 
-1. Create a new R script, save it as `plant_height.R`
-2. It's always easier to modify existing code than to create new code from scratch. To make sure you start off with a nice clean copy of the beak length code, follow [this link  &rarr;](lab1_beak_length_script.html) to copy the code for the beak length script
-3. Use "find and replace" (the magnifying glass on the Source tab toolbar) to modify the script.
-    - replace `finches` with `bluestem`
-    - replace `beak_length` with `plant_height`
-    - replace `outcome` with `location`
-    - replace `died` with `lowland` and replace `survived` with `upland`
-    - change the x- and y-axis labels on the histogram
-    - change the x- and y-axis labels on the bar chart
-    - change the name of the file you save the histogram as
-    - change the name of the file you save the bar chart as
-4. Save the `plant_height.R` script
-5. Run the `plant_height.R` script, one line at a time, watching for errors. If you performed step 3 correctly, you shouldn't get any errors.
-6. Insert the figures into your word document
-    - Open your project folder in the Finder. 
-    - Open your Word document.
-    - Drag the figures from the Finder into your open Word document.
+Create a new R script, save it as `plant_height.R`. Then go to the [Beak Length Script](beak-length-script.html), copy the code, and paste it into your new plant height script.
 
+## Modify script
+
+Go through the script looking for code that refers to finches or variables in the finches dataset.
+
+Replace each instance with the analogous word or variable name for the bluestem dataset.
+
+If you are feeling saavy, use "find and replace" (the magnifying glass on the Source tab toolbar) to modify the script. Be careful, though! With great power comes great responsibility. It's easy to accidentally replace something you didn't mean to. And triple check your spelling before you Replace All. Remember that R is case sensitive and don't mistake any underscores for spaces.
+
+To get you moving along, here are some suggestions:
+
+- replace `finches` with `bluestem`
+- replace `beak_length` with `plant_height`
+- replace `outcome` with `location`
+- replace `died` with `lowland` and replace `survived` with `upland`
+- change the x- and y-axis labels on the histogram
+- change the x- and y-axis labels on the bar chart
+- change the name of the file you save the histogram as
+- change the name of the file you save the bar chart as
+
+Now save the `plant_height.R` script. If you see any red x's pop up on the left side of your script, those indicate potential errors. Hover your mouse over them to see the error message and try to solve the problem before you run the code. Your instructor or a friend will come in handy with solving any errors.
+
+Finally, run the `plant_height.R` script, one line at a time, watching for errors and looking closely at any figures you generate. If you get an error or notice a mistake, fix it and start running the code again from the top.
 
 ## Repeat for rame length
 
