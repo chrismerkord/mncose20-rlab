@@ -56,4 +56,10 @@ write-a-results-section
 submit-your-assignment
 saving-your-work
 introduction-2
+the-question
+start-your-project
+create-a-new-script
+look-at-the-fast-plant-data
+your-assignment-1
+a-new-variation
 beak-length-script

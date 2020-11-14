@@ -58,7 +58,123 @@
 <h1>
 <span class="header-section-number">9</span> Introduction<a class="anchor" aria-label="anchor" href="#introduction-2"><i class="fas fa-link"></i></a>
 </h1>
+<p>In this activity you will apply what you learned in the Finch Example and the Bluestem Variation activities to analyze a new dataset.</p>
+<p>Students at Minnesota State University Moorhead conducted an experiment to determine the effect of artificial selection in Wisconsin Fast Plants (<em>Brassica rapa</em>). The students grew plants for 10 days and then counted the number of trichomes (hairlike structures) on the edge of the first true leaf of each plant. The 75% of plants with the fewest trichomes were removed from the population. The remaining plants were allowed to flower, were fertilized with each other, and produced seeds. Those seeds were planted, and the offspring generation were allowed to grow for 10 days. At that point the students counted the trichomes on the offspring genertation.</p>
+<p>Presumably, if the number of trichomes is a heritable trait, the mean number of trichomes should have shifted from the parent generation to the offspring generation. If so, this would be an example of <strong>artificial selection</strong>.</p>
+<div id="the-question" class="section level2" number="9.1">
+<h2>
+<span class="header-section-number">9.1</span> The Question<a class="anchor" aria-label="anchor" href="#the-question"><i class="fas fa-link"></i></a>
+</h2>
+<p>The question you are trying to answer in this activity is:</p>
+<blockquote class="text-success">
+Does the number of trichomes on Fast Plants (<i>Brassica rapa</i>) plants vary between the F0 (parent) and F1 (offspring) generations.
+</blockquote>
+</div>
+<div id="start-your-project" class="section level2" number="9.2">
+<h2>
+<span class="header-section-number">9.2</span> Start your project<a class="anchor" aria-label="anchor" href="#start-your-project"><i class="fas fa-link"></i></a>
+</h2>
+<p>Follow these directions to get started:</p>
+<ol style="list-style-type: decimal">
+<li>Go to <a href="https://rstudio.cloud/">RStudio Cloud</a> and sign in.</li>
+<li>On the left, under Spaces, click on <strong>Course Workspace</strong>
+</li>
+<li>Click the <strong>Start</strong> button on the <strong>Artificial Selection Project</strong> assignment.</li>
+</ol>
+<p>When your project starts, look at the <strong>Files</strong> tab in the lower right pane.</p>
+<p>There are two files you should take note of:
+- <a href="fastplant_data.xlsx">fastplant_data.xlsx</a> - this is the data file you will use. If it’s not in your project folder, download it here and upload to the folder.
+- beak-length.R - this is a copy of the <a href="beak-length-script.html">Beak Length R Script</a> from the Finch Analysis.</p>
+</div>
+<div id="create-a-new-script" class="section level2" number="9.3">
+<h2>
+<span class="header-section-number">9.3</span> Create a new script<a class="anchor" aria-label="anchor" href="#create-a-new-script"><i class="fas fa-link"></i></a>
+</h2>
+<p>We suggest you start your assignment by creating a new script and copying the code from beak_length.R into it. Alternatively you can open <strong>beak-length.R</strong> and go to File &gt; Save As… to save a copy of the script. A good name might be something like <strong>fastplant.R</strong>.</p>
+</div>
+<div id="look-at-the-fast-plant-data" class="section level2" number="9.4">
+<h2>
+<span class="header-section-number">9.4</span> Look at the fast plant data<a class="anchor" aria-label="anchor" href="#look-at-the-fast-plant-data"><i class="fas fa-link"></i></a>
+</h2>
+<p>In your new script, adjust the code so that it reads the fastplant_data.xlsx instead of finches_data.xlsx. Run the code and note the data object which appeared in your Environment tab. Click on the blue table icon to the right of the object name to open the data viewer window.</p>
+<p>Inspect the data.</p>
+<p>Each row in the dataset represents an individual plant.</p>
+<p>The variables in the dataset are:</p>
+<ul>
+<li>
+<strong>generation</strong>. The generation the plant belonged to? (values include <code>"F0"</code> or <code>"F1"</code>)</li>
+<li>
+<strong>trichome_count</strong>. The number of trichomes the plant had. (values are numeric integers)</li>
+<li>
+<strong>selected</strong>. For the F0 generation, was the individual plant selected for breeding? (values include, <code>"yes"</code>, <code>"no"</code>, or <code>"NA"</code> if the plant was from the F1 generation)</li>
+</ul>
+<p>Ask yourself:</p>
+<ul>
+<li>Which variable contains the numeric variable that was measured or counted? This is the response variable, which you will summarize by calculating the mean.</li>
+<li>Which variable would you use to group the plants? Remember you are trying to compare the response variable at two points in time. Which variable groups plants into two points in time?</li>
+</ul>
+</div>
+<div id="your-assignment-1" class="section level2" number="9.5">
+<h2>
+<span class="header-section-number">9.5</span> Your assignment<a class="anchor" aria-label="anchor" href="#your-assignment-1"><i class="fas fa-link"></i></a>
+</h2>
+<p>Your objective in this lab is to generate the results that will answer the question above, specifically by producing the following:</p>
+<ul>
+<li>One histogram showing how the distribution of numbers of trichomes varied between generations. It should also show which plants in the F0 generation were selected for breeding and which were not.</li>
+<li>One bar chart showing how the mean number of trichomes varied between generations. Include a 95% confidence interval around the means.</li>
+<li>Two figure legends describing these figures.</li>
+<li>One paragraph describing the results of the analysis, including the results of a <em>t</em>-test to test for a difference between the means.</li>
+</ul>
+<p>To answer the question, you should:</p>
+<ol style="list-style-type: decimal">
+<li>Modify remaining code for use with the fast plant data</li>
+<li>Plot a histogram with facets for each generation (F0 and F1)
+<ul>
+<li>Instead of setting the fill color to vary by generation, set it to vary by whether or not the plants were <strong>selected</strong> for breeding. This is the only place you will use the <strong>selected</strong> variable</li>
+<li>Remove the line <code>guides(fill = FALSE) +</code> to show the fill color legend</li>
+<li>For help, see <a href="introduction-2.html#a-new-variation">A new variation</a> below</li>
+</ul>
+</li>
+<li>Summarize trichome count by generation</li>
+<li>Create a bar chart showing the mean trichome count in each generation (with confidence intervals)</li>
+<li>Conduct a t-test to test if the difference in means is statistically significant</li>
+</ol>
+<p>For a reminder on how to perform the analysis and writing steps, see the Bluestem Variation activity.</p>
+<p>When you are finished:</p>
+<ul>
+<li>Paste your two (2) figures into a Word document, add figure legends and a RESULTS paragraph, and upload it to your <em>lab</em> D2L page under Assessments &gt; Assignments &gt; Data Lab 2.</li>
+</ul>
+<div id="a-new-variation" class="section level3" number="9.5.1">
+<h3>
+<span class="header-section-number">9.5.1</span> A new variation<a class="anchor" aria-label="anchor" href="#a-new-variation"><i class="fas fa-link"></i></a>
+</h3>
+<p>In the finch and bluestem analyses, you created a histogram for each group and also colored the histograms differently for each group.</p>
+<p>In theory, there is no reason you can’t use a different variable to color the histograms.</p>
+<p>For example, here is the finch data colored by <code>sex</code>:</p>
+<div class="sourceCode" id="cb33"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="co"># histogram of beak length, grouped by survival, colored by sex</span>
+<span class="fu">ggplot</span><span class="op">(</span>
+  data <span class="op">=</span> <span class="va">finches</span>,
+  mapping <span class="op">=</span> <span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">beak_length</span>,
+                fill <span class="op">=</span> <span class="va">sex</span><span class="op">)</span>           <span class="co"># color the boxes by gender</span>
+<span class="op">)</span> <span class="op">+</span>
+  <span class="fu">geom_histogram</span><span class="op">(</span>bins <span class="op">=</span> <span class="fl">14</span><span class="op">)</span> <span class="op">+</span>
+  <span class="fu">facet_wrap</span><span class="op">(</span><span class="op">~</span> <span class="va">outcome</span>, ncol <span class="op">=</span> <span class="fl">1</span><span class="op">)</span> <span class="op">+</span>   <span class="co"># put each outcome in its own panel</span>
+  <span class="fu">labs</span><span class="op">(</span>
+    title <span class="op">=</span> <span class="st">"Distribution of beak lengths"</span>,
+    subtitle <span class="op">=</span> <span class="st">"Grouped by sex and outcome"</span>,
+    x <span class="op">=</span> <span class="st">"Beak Length (mm)"</span>,
+    y <span class="op">=</span> <span class="st">"Number of Birds"</span>
+  <span class="op">)</span></code></pre></div>
+<div class="inline-figure"><img src="artificial-selection_files/figure-html/finch-sex-histogram-1.png" width="70%" style="display: block; margin: auto;"></div>
+<p>For your current assignment, put each generation of plants on its own panel, and set the fill color of the columns by whether the plants were <strong>selected</strong> for breeding or not.</p>
+<p>Remove the line <code>guides(fill = FALSE) +</code> to show the fill color legend.</p>
+<p>In <em>your</em> figures, do not use subtitles and set your titles to say <code>"Figure 1."</code> and <code>"Figure 2."</code>.</p>
+<p>For example:</p>
+<div class="inline-figure"><img src="artificial-selection_files/figure-html/fast-plant-histogram-1.png" width="70%" style="display: block; margin: auto;"></div>
 
+</div>
+</div>
 </div>
 
 
@@ -68,7 +184,16 @@
 <div class="next"><a href="beak-length-script.html"><span class="header-section-number">10</span> Beak Length Script</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#introduction-2"><span class="header-section-number">9</span> Introduction</a></li></ul>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#introduction-2"><span class="header-section-number">9</span> Introduction</a></li>
+<li><a class="nav-link" href="#the-question"><span class="header-section-number">9.1</span> The Question</a></li>
+<li><a class="nav-link" href="#start-your-project"><span class="header-section-number">9.2</span> Start your project</a></li>
+<li><a class="nav-link" href="#create-a-new-script"><span class="header-section-number">9.3</span> Create a new script</a></li>
+<li><a class="nav-link" href="#look-at-the-fast-plant-data"><span class="header-section-number">9.4</span> Look at the fast plant data</a></li>
+<li>
+<a class="nav-link" href="#your-assignment-1"><span class="header-section-number">9.5</span> Your assignment</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#a-new-variation"><span class="header-section-number">9.5.1</span> A new variation</a></li></ul>
+</li>
+</ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
